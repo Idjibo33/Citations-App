@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:citations/citation.dart';
 import 'package:dio/dio.dart';
 
@@ -19,7 +17,6 @@ class ServiceCitation {
       final List<dynamic> resultat = response.data['quotes'];
       return resultat.map((json) => Quotes.fromJson(json)).toList();
     } on DioException catch (e) {
-      print('errreur survenu : ${e.message}');
       throw Exception(e);
     }
   }
