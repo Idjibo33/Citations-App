@@ -8,6 +8,10 @@ Ce projet est une mini application d'affichage de citation provenant d'un d'un a
 ## Objectif du projet: 
 L'objectif est de créer une application mobile de lecture de citation de motivation permettant à l'utilisateur de lire des citations.
 
+## Aperçu 
+- **Accueil**
+![Accueil](assets/images/Accueil.png)
+
 ## Technologies utilisées: 
 - **Framework:** Flutter
 - **Language:**Dart
