@@ -12,4 +12,4 @@ L'objectif est de créer une application mobile de lecture de citation de motiva
 - **Framework:** Flutter
 - **Language:**Dart
 - **UI:** Pageview...
-- **Packages:** Dio, provider
+- **Packages:** Dio, provider, intl, Shared_preferences, GooleFonts, 
