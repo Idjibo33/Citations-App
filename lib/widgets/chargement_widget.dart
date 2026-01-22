@@ -7,7 +7,7 @@ class ChargementWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-        children: [CircularProgressIndicator(), Text('Chargement des données')],
+        children: [LinearProgressIndicator(), Text('Chargement des données')],
       ),
     );
   }

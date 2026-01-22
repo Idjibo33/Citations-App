@@ -1,9 +1,7 @@
-import 'package:citations/actions_utilisateur_widget.dart';
-import 'package:citations/citation.dart';
 import 'package:citations/constants.dart';
-import 'package:citations/page_view_provider.dart';
+import 'package:citations/models/citation.dart';
+import 'package:citations/widgets/actions_utilisateur_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class CitationWidget extends StatelessWidget {
   final Quotes singleCitation;
@@ -11,8 +9,6 @@ class CitationWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int pageIndex = context.watch<PageViewProvider>().pageViewIndex;
-    bool isLiked = false;
     return SizedBox(
       height: double.infinity,
       width: double.infinity,

@@ -1,4 +1,4 @@
-import 'package:citations/citation.dart';
+import 'package:citations/models/citation.dart';
 import 'package:dio/dio.dart';
 
 class ServiceCitation {

@@ -1,6 +1,7 @@
 import 'package:citations/constants.dart';
-import 'package:citations/page_view_provider.dart';
+import 'package:citations/providers/page_view_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class ActionsUtilisateurWidget extends StatelessWidget {
@@ -26,7 +27,10 @@ class ActionsUtilisateurWidget extends StatelessWidget {
                       if (pageIndex == 0) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
-                            content: Text("Aucune page précédente"),
+                            content: Text(
+                              "Aucune page précédente",
+                              style: GoogleFonts.inter(),
+                            ),
                             behavior: SnackBarBehavior.floating,
                           ),
                         );
@@ -38,7 +42,10 @@ class ActionsUtilisateurWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                Text("Précedent"),
+                Text(
+                  "Précedent",
+                  style: GoogleFonts.inter(fontWeight: FontWeight.bold),
+                ),
               ],
             ),
             Column(
@@ -50,7 +57,10 @@ class ActionsUtilisateurWidget extends StatelessWidget {
                     icon: Icon(Icons.ios_share_rounded),
                   ),
                 ),
-                Text("Share"),
+                Text(
+                  "Partager",
+                  style: GoogleFonts.inter(fontWeight: FontWeight.bold),
+                ),
               ],
             ),
             Column(
@@ -64,7 +74,10 @@ class ActionsUtilisateurWidget extends StatelessWidget {
                     icon: Icon(Icons.arrow_forward),
                   ),
                 ),
-                Text("Next"),
+                Text(
+                  "Suivant",
+                  style: GoogleFonts.inter(fontWeight: FontWeight.bold),
+                ),
               ],
             ),
           ],

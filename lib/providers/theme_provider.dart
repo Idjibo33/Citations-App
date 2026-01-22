@@ -1,11 +1,18 @@
-import 'package:citations/constants.dart';
+import 'package:citations/services/theme_preferences.dart';
 import 'package:flutter/material.dart';
 
 class ThemeProvider extends ChangeNotifier {
-  ThemeData darkMode = ThemeData(
-    colorScheme: ColorScheme.fromSeed(
-      seedColor: Styles.couleurePrimaire,
-      brightness: Brightness.dark,
-    ),
-  );
+  bool isLightMode = true;
+
+  ThemeProvider(this.isLightMode);
+  void changeThemeMode() {
+    isLightMode = !isLightMode;
+    ThemePreferences().enregistrerTheme(isLightMode);
+    notifyListeners();
+  }
+
+  void lireThemeMode() {
+    ThemePreferences().lireTheme(isLightMode);
+    notifyListeners();
+  }
 }

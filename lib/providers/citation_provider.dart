@@ -1,5 +1,5 @@
-import 'package:citations/citation.dart';
-import 'package:citations/service.dart';
+import 'package:citations/models/citation.dart';
+import 'package:citations/services/service.dart';
 import 'package:flutter/material.dart';
 
 class CitationProvider extends ChangeNotifier {
