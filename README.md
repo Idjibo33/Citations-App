@@ -6,7 +6,7 @@ Ce projet est une mini application d'affichage de citation provenant d'un d'un a
 
 
 ## Objectif du projet: 
-L'objectif est de créer une application mobile de lecture de citation de motivation permettant à l'utilisateur de lire des citations.
+L'objectif est de créer une application mobile de lecture de citation de motivation pour maitriser les appels api.
 
 ## Aperçu 
 - **Accueil**
